@@ -1,0 +1,279 @@
+@import '../../../scss/variables';
+
+header {
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.header {
+  &__content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+  }
+
+  &__logo {
+    text-decoration: none;
+
+    img {
+      width: 200px;
+    }
+  }
+
+  &__top-nav {
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+
+    a {
+      margin-right: 20px;
+    }
+  }
+}
+
+.landing-section {
+  width: 100%;
+  height: 600px;
+  background: url('../../../assets/RO-banner.jpg') center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  &__navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(#fff, 0.2);
+    padding: 20px 0;
+    width: 100%;
+
+    &-wrapper {
+      width: 1000px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    &-wrapper {
+      margin-right: 200px;
+      width: 500px;
+      height: 450px;
+      h1 {
+        color: #fff;
+        font-weight: bold;
+      }
+
+      p {
+        color: rgba(#fff, 0.8);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.intro-section {
+  display:  flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+  &-header {
+    font-weight: bold;
+    margin: 0;
+    color: $header-color;
+  }
+
+  &__welcome {
+    display:  flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items:  center;
+    padding: 50px 0;
+  }
+
+  &__top {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 50px 0;
+
+    figure {
+      img {
+        max-width: 500px;
+      }
+    }
+  }
+
+  &__mid {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    padding: 50px 0;
+    margin-right: -500px;
+
+    figure {
+      margin-right: -50px;
+      img {
+        max-width: 600px;
+      }
+    }
+  }
+}
+
+.video-carousel {
+  display: block;
+  background-color: lighten(#AF0301, 60%);
+  width: 100%;
+  padding: 50px 0;
+
+  &__header {
+    margin: 20px auto;
+    display: block;
+    width: 600px;
+  }
+
+  &__text {
+    margin: 20px auto;
+    display: block;
+    width: 600px;
+  }
+
+  &__videos {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    img {
+      width: 300px;
+      margin-right: 20px;
+    }
+  }
+}
+
+.reviews {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+
+  &__content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+
+    &__header {
+      font-weight: bold;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: #AF0301;
+
+  &__content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+  }
+
+  &__links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    small {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+
+.mystical-quotes {
+  font-size: 40px;
+}
+
+.vertical-line {
+  height: 150px;
+  width: 2px;
+  background-color: rgba(#fff, 0.4);
+  border: 0;
+  margin: 0;
+}
