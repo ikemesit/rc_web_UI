@@ -43,9 +43,13 @@
   </div>
 
   <div class="intro-section__top">
-     <figure>
-       <img src="assets/Illumination.png" alt="">
-     </figure>
+     <div class="intro-section__image">
+       <div class="section-image__overlay">
+        <h2 class="section-image__text">
+          Start your Rosicrucian Journey
+        </h2>
+       </div>
+     </div>
      <div>
        <h1 class="intro-section-header">We care about your spiritual growth and well-being…</h1>
        <p class="intro-section-text">Our mission is to assist all seekers of truth discover spiritual wisdom that enables them to live in harmony with the creative, constructive cosmic forces for the attainment of health, happiness and peace.</p>
@@ -65,7 +69,6 @@
       <img src="assets/rc-park.png" alt="">
     </figure>
  </div>
-
 </div>
 
 <div class="video-carousel">
@@ -107,3 +110,12 @@
     </div>
   </div>
 </div>
+<ng-template>
+  <svg xmlns="http://www.w3.org/2000/svg"  version="1.1">
+    <defs>
+    <filter id="blur">
+    <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    </defs>
+  </svg>
+</ng-template>
